@@ -2,6 +2,8 @@ package com.AErcilla;
 
 public class HolaMundo {
     public static void main(String[] args) {
-        System.out.println("Hola Mundo");
+        mensaje msg = new mensaje();
+        String nombre = msg.solicitarDatos("Escribe tu nombre: ");
+        msg.saludar(nombre);
     }
 }
